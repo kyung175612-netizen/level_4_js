@@ -78,7 +78,7 @@ orderCoffee(sns);
 //3. data-* 속성
 const cart_buy_div = document.querySelector('.cart_buy');
 //HTML data-* 속성은 자바스크립트에서 dataset.* 읽을 수 있음.
-let dataResult = cart_buy_div.datajset.name;
+let dataResult = cart_buy_div.dataset.name;
 console.log(`dataResult 값은 $(dataResult)`);
 
 //수량 증감 data-* 속성 활용
@@ -107,14 +107,13 @@ plusBtn.addEventListener('click',()=>{
     console.log(typeof(countNumSpan.dataset.count));//문자로 인식, 계산불가
     let currentNum = Number(countNumSpan.dataset.count);//문자를 숫자로 변환해서 저장
     console.log(currentNum, typeof(currentNum));//숫자로 변경된 점 확인
-
-    let plusTotal = ++currentNum;
-    countNumSpan.dataset.count = plusTotal;
-    countNumSpan.textContent = plusTotal;
-
-    let minusTotal = --currentNum;
+    //재고 수량 10개
+    currentNum > 0 ? alert('최대 구매 수량입니다. 더 이상 구매할 수 없습니다.'):(()=>
+        {let plusTotal = ++currentNum;//숫자로 변환된 변수를 1 증가해서 담은 증가변수
+        countNumSpan.dataset.count = plusTotal;//증가된 변수를 해당 data 속성에 업데이트
+        countNumSpan.textContent = plusTotal;//증가된 변수를 사용자가 보는 화면에 출력
+    })();
 })
-
 //변수 목적 정리
 //countNumSpan : 수량 표시되는 span 태그 변수
 //plusBtn : +버튼 변수
