@@ -78,7 +78,7 @@ orderCoffee(sns);
 //3. data-* 속성
 const cart_buy_div = document.querySelector('.cart_buy');
 //HTML data-* 속성은 자바스크립트에서 dataset.* 읽을 수 있음.
-let dataResult = cart_buy_div.dataset.name;
+let dataResult = cart_buy_div.datadset.name;
 console.log(`dataResult 값은 $(dataResult)`);
 
 //수량 증감 data-* 속성 활용
