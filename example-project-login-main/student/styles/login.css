@@ -76,7 +76,9 @@ main .login-box .welcome-pack::before,
 main .login-box .welcome-pack::after {
     content: ''; display: block; border-radius: 50%; height: 30px; width: 30px; background-color: #fff; position:absolute; transform: translateX(-100px);
 }
-main .login-box .welcome-pack::before {}
+main .login-box .welcome-pack::before {
+    
+}
 main .login-box .welcome-pack::after {}
 /* --------------------------------웰컴백 쿠폰 박스 좌우 원 표시 종료 */
 main .login-box .welcome-pack h2 {
