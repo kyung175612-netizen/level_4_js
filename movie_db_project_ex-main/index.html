@@ -15,6 +15,12 @@
   <script src="./scripts/index.js" defer></script>
   <script src="./scripts/anime_db.js"></script>
   <!-- 애니메이션 -->
+  <!--swiper 필수 css cdn 연결-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!--swiper 필수 JS cdn 연결-->
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
   <!-- header>h1>a>img -->
@@ -40,7 +46,37 @@
         <p>개봉일</p>
         <a href="주소"><img src="포스터경로" alt="포스터명"></a>
       </li> -->
+
     </ul>
+    <!-- ------------------------- swiper + 무비차트 -->
+    <h2>무비차트 2026</h2>
+    <section class="chart">
+      <div class="swiper chart_swiper">
+        <div class="swiper-wrapper">
+          <!-- <div class="swiper-slide">
+            이미지는 background 처리
+            <p class="num">1</p>
+            <h3>어벤져스</h3>
+            <p class="rating">9.2</p>
+            <p class="story">지구를 위협하는....</p>
+          </div> -->
+        </div>
+      </div>
+    </section>
+      <h3>애니메이션 차트 2026</h3>
+    <section class="anime_chart">
+      <div class="swiper anime_chart_swiper">
+        <div class="swiper-wrapper">
+          <!-- <div class="anime-swiper-slide">
+            이미지는 background 처리
+            <p class="num">3</p>
+            <h3>하울의 움직이는 성</h3>
+            <p class="rating">9.3</p>
+            <p class="story">마녀의 저주로 할머니가 된 소피가....</p>
+          </div> -->
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 </html>
